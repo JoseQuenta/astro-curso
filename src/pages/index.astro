@@ -1,8 +1,39 @@
-<h1 class="title">Hola Mundo</h1>
+---
+const title = 'Mi proyecto en Astro!!!!'
+const color = 'warning'
+
+const hobbies = ['programa','leer', 'escribir', 'ver peliculas']
+---
+
+<h1 class="title">{hobbies[0]}</h1>
+<h1 class="title">{hobbies[1]}</h1>
+<h1 class="title">{hobbies[2]}</h1>
+
+<ul>
+{
+	hobbies.map(hobby => <li>
+	<h3>{hobby}</h3>
+	<button>Like</button>
+	</li>)
+}
+</ul>
 
 <style>
+	body{
+		background: #202020;
+		color: white;
+	}
+
 	.title{
 		color: skyblue;
+	}
+
+	.danger{
+		color: red;
+	}
+
+	.warning{
+		color: yellow;
 	}
 </style>
 

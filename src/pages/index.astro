@@ -1,8 +1,10 @@
 ---
 const title = 'Mi proyecto en Astro!!!!'
-const color = 'warning'
+const color = 'danger'
 
 const hobbies = ['programa','leer', 'escribir', 'ver peliculas']
+
+const isActive = false
 ---
 
 <h1 class="title">{hobbies[0]}</h1>
@@ -17,6 +19,8 @@ const hobbies = ['programa','leer', 'escribir', 'ver peliculas']
 	</li>)
 }
 </ul>
+
+<h3 class="danger">{isActive ? "El usuario esta activo" :""}</h3>
 
 <style>
 	body{

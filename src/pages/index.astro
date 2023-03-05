@@ -1,13 +1,24 @@
 ---
-const title = 'Mi proyecto en Astro!!!!'
-const color = 'danger'
 
-const hobbies = ['programa','leer', 'escribir', 'ver peliculas']
+// const title = 'Mi proyecto en Astro!!!!'
+// const color = 'danger'
 
-const isActive = false
+// const hobbies = ['programa','leer', 'escribir', 'ver peliculas']
+
+// const isActive = false
+
+import Layout from "../components/Layout.astro";
 ---
 
-<h1 class="title">{hobbies[0]}</h1>
+<Layout pageTitle = "Pagina inicial" pageDescription = "Pagina de Vestidos de novia">
+	
+	<h1>Página inicial</h1>
+	<p>bienviendo a mi blog</p>
+
+</Layout>
+
+
+<!-- <h1 class="title">{hobbies[0]}</h1>
 <h1 class="title">{hobbies[1]}</h1>
 <h1 class="title">{hobbies[2]}</h1>
 
@@ -43,4 +54,4 @@ const isActive = false
 
 <script>
 	console.log("Hola Mundo");
-</script>
+</script> -->

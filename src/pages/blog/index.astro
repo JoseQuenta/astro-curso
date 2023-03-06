@@ -1,16 +1,16 @@
 ---
 import Layout from "../../components/Layout.astro";
+import imagen1 from '../../img/weddingDress.jpg';
 
 const posts = await Astro.glob('./posts/*.md')
-console.log();
+
 
 ---
 
 <Layout pageTitle="Blog de desarrollo" pageDescription="Tutoriales de desarrollo">
 
-    <h1>
-        blog
-    </h1>
+    <h1>Blog 3</h1>
+    <img width="500" src={imagen1} alt="">
 
     {
         posts.map(post => {
